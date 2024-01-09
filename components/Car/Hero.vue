@@ -5,14 +5,8 @@
             <div class="text-center w-full sm:w-3/5 lg:w-1/2">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif mb-4 md:mb-6 lg:mb-8 text-white">Find Your Drive</h1>
 
-                <!-- Home search bar -->
-                <div
-                    class="font-serif w-full text-sm md:text-lg lg:text-2xl rounded-full bg-white flex justify-between overflow-hidden drop-shadow-2xl mx-auto">
-                    <input type="text" class="py-2 px-5 lg:py-3 lg:px-6 w-full rounded-full focus:outline-none"
-                        placeholder="Search by city..." />
-                    <button class="bg-sky-500 px-6 md:px-10 text-white">Search</button>
-                </div>
-                <!-- Home search bar -->
+                <CarSearchBar />
+
             </div>
         </div>
         <div class="z-1 absolute w-full h-full bg-black opacity-50"></div>
