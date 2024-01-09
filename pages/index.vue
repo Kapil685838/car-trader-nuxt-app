@@ -1,5 +1,5 @@
 <template>
     <div>
-        This is the index page.
+        <CarHero />
     </div>
 </template>
