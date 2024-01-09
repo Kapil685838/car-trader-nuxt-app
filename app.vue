@@ -10,18 +10,17 @@
 
     <div>
       <!-- Home hero -->
-      <div class="relative h-screen w-100 bg-no-repeat bg-cover bg-bottom bg-[url('https://img.freepik.com/free-photo/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.jpg?w=996&t=st=1704004307~exp=1704004907~hmac=7a635ea7e3b3d62653d692e27e0ca11274b0d93cad7f0bf029b7bb6bab8e591a')]">
+      <div
+        class="relative h-screen w-100 bg-no-repeat bg-cover bg-bottom bg-[url('https://img.freepik.com/free-photo/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.jpg?w=996&t=st=1704004307~exp=1704004907~hmac=7a635ea7e3b3d62653d692e27e0ca11274b0d93cad7f0bf029b7bb6bab8e591a')]">
         <div class="z-10 absolute w-full h-full flex justify-center items-center">
           <div class="text-center w-full sm:w-3/5 lg:w-1/2">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif mb-4 md:mb-6 lg:mb-8 text-white">Find Your Drive</h1>
 
             <!-- Home search bar -->
-            <div class="font-serif w-full text-sm md:text-lg lg:text-2xl rounded-full bg-white flex justify-between overflow-hidden drop-shadow-2xl mx-auto">
-              <input 
-                type="text" 
-                class="py-2 px-5 lg:py-3 lg:px-6 w-full rounded-full focus:outline-none"
-                placeholder="Search by city..."
-              />
+            <div
+              class="font-serif w-full text-sm md:text-lg lg:text-2xl rounded-full bg-white flex justify-between overflow-hidden drop-shadow-2xl mx-auto">
+              <input type="text" class="py-2 px-5 lg:py-3 lg:px-6 w-full rounded-full focus:outline-none"
+                placeholder="Search by city..." />
               <button class="bg-sky-500 px-6 md:px-10 text-white">Search</button>
             </div>
             <!-- Home search bar -->
@@ -65,11 +64,9 @@
           <!-- Car card -->
           <div class="shadow border rounded w-full overflow-hidden mb-5 cursor-pointer h-[200px]">
             <div class="flex h-full">
-              <img 
-                src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1440" 
-                alt=""
-                class="w-[300px] h-full"
-              />
+              <img
+                src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1440"
+                alt="" class="w-[300px] h-full" />
               <div class="p-4 flex flex-col">
                 <div>
                   <h1 class="text-2xl text-blue-700">
@@ -87,5 +84,34 @@
       </div>
     </div>
     <!-- Cars page -->
+
+    <!-- Cars detail page -->
+    <div class="mx-auto mt-4 max-w-7xl space-y-4 px-4 xs:px-8 sm:px-10 lg:px-16 pb-16">
+      <div>
+        <!-- Car hero -->
+        <div>
+          <img
+            src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1440"
+            alt="" />
+          <h1 class="mt-10 text-4xl">Ferari</h1>
+          <div class="text-slate-500 flex text-lg mt-3 border-b pb-5 justify-between">
+            <div class="flex">
+              <p class="mr-2">5 seats</p>
+              <p class="mr-2">|</p>
+              <p class="mr-2">67,444 miles</p>
+            </div>
+            <div>
+              <p class="font-blod text-2xl">$25,555</p>
+            </div>
+          </div>
+        </div>
+        <!-- Car hero -->
+
+        <!-- Car attributes -->
+        <div></div>
+        <!-- Car attributes -->
+      </div>
+    </div>
+    <!-- Cars detail page -->
   </div>
 </template>
