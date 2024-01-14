@@ -1,5 +1,5 @@
 <template>
-    <div class="shadow border mr-10 z-30 max-w-64 max-h-max">
+    <div class="shadow border mr-10 z-30 max-w-64">
         <div class="p-5 flex justify-between gap-12 relative cursor-pointer border-b">
             <h3>Location</h3>
             <h3 class="text-blue-400 capitalize">Toronto</h3>
