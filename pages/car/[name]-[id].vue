@@ -2,9 +2,9 @@
 const route = useRoute();
 
 const toTitleCase = (str) => {
-    return str.replace(/\w\S*/g, (txt) => {
-        return txt.charAt(0).toUpperCase() + txt.substr(1);
-    });
+  return str.replace(/\w\S*/g, (txt) => {
+    return txt.charAt(0).toUpperCase() + txt.substr(1);
+  });
 };
 
 useHead({
@@ -14,14 +14,12 @@ useHead({
 
 <template>
   <div class="mx-auto mt-4 max-w-7xl space-y-4 px-4 xs:px-8 sm:px-10 lg:px-16 pb-16">
-    <div>
-      <CarDetailHero />
+    <CarDetailHero />
 
-      <CarDetailAttributes />
+    <CarDetailAttributes />
 
-      <CarDetailDescription />
+    <CarDetailDescription />
 
-      <CarDetailContact />
-    </div>
+    <CarDetailContact />
   </div>
 </template>
