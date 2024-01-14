@@ -13,6 +13,12 @@ const updateModal = (key) => {
 
 const onChangeLocation = () => {
   if (!city.value) return;
+  if (!isNaN(parseInt(city.value))) {
+    throw createError({
+      statusCode: 400,
+      message: "Invalid city format",
+    });
+  }
   updateModal("location");
   navigateTo(`/city/${city.value}/car/${route.params.make}`);
 };
@@ -22,7 +28,9 @@ const onChangeLocation = () => {
   <div class="shadow border mr-10 z-30 max-w-64">
     <div class="p-5 flex justify-between gap-12 relative cursor-pointer border-b">
       <h3>Location</h3>
-      <h3 @click="updateModal('location')" class="text-blue-400 capitalize">{{ route.params.city }}</h3>
+      <h3 @click="updateModal('location')" class="text-blue-400 capitalize">
+        {{ route.params.city }}
+      </h3>
       <div
         v-if="modal.location"
         class="absolute border shadow left-56 p-5 top-1 -m-1 bg-white"
