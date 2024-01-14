@@ -2,7 +2,10 @@
 const error = useError();
 
 const handleError = () => {
-  navigateTo("/");
+  // navigateTo("/");
+  clearError({
+    redirect: "/",
+  });
 };
 </script>
 
