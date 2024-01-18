@@ -16,7 +16,7 @@ definePageMeta({
 <template>
   <div class="mt-32 flex">
     <NuxtErrorBoundary>
-      <div>
+      <div class="z-30 mr-10">
         <CarSideBar />
       </div>
 
