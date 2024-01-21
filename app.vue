@@ -6,7 +6,7 @@
 
     <!-- 
       Currently on 
-        Lecture 36. - Adding the Car Make Filter
+        Lecture 39. - Assembling the Pages - 12:42
     -->
   </div>
 </template>
