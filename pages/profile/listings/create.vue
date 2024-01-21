@@ -25,43 +25,43 @@ const onChangeInput = (data, name) => {
 };
 
 const inputs = [
-    {
-        id: 1,
-        title: "Model *",
-        name: "model",
-        placeholder: "Civic"
-    },
-    {
-        id: 2,
-        title: "Year *",
-        name: "year",
-        placeholder: "2019"
-    },
-    {
-        id: 3,
-        title: "Miles *",
-        name: "miles",
-        placeholder: "10000"
-    },
-    {
-        id: 4,
-        title: "City *",
-        name: "city",
-        placeholder: "Austin"
-    },
-    {
-        id: 5,
-        title: "Number of Seats *",
-        name: "seats",
-        placeholder: "5"
-    },
-    {
-        id: 6,
-        title: "Features *",
-        name: "features",
-        placeholder: "Leather Interior, No Accidents"
-    }
-]
+  {
+    id: 1,
+    title: "Model *",
+    name: "model",
+    placeholder: "Civic",
+  },
+  {
+    id: 2,
+    title: "Year *",
+    name: "year",
+    placeholder: "2019",
+  },
+  {
+    id: 3,
+    title: "Miles *",
+    name: "miles",
+    placeholder: "10000",
+  },
+  {
+    id: 4,
+    title: "City *",
+    name: "city",
+    placeholder: "Austin",
+  },
+  {
+    id: 5,
+    title: "Number of Seats *",
+    name: "seats",
+    placeholder: "5",
+  },
+  {
+    id: 6,
+    title: "Features *",
+    name: "features",
+    placeholder: "Leather Interior, No Accidents",
+  },
+];
 </script>
 
 <template>
@@ -74,6 +74,15 @@ const inputs = [
         title="Make *"
         :options="makes"
         name="make"
+        @change-input="onChangeInput"
+      />
+
+      <CarAdInput
+        v-for="input in inputs"
+        :key="input.id"
+        :title="input.title"
+        :name="input.name"
+        :placeholder="input.placeholder"
         @change-input="onChangeInput"
       />
     </div>
