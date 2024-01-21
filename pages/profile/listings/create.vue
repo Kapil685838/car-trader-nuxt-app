@@ -85,6 +85,15 @@ const inputs = [
         :placeholder="input.placeholder"
         @change-input="onChangeInput"
       />
+
+      <CarAdTextarea
+        title="Description *"
+        name="description"
+        placeholder=""
+        @change-input="onChangeInput"
+      />
+
+      <CarAdImage @change-input="onChangeInput" />
     </div>
   </div>
 </template>
